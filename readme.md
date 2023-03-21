@@ -7,4 +7,4 @@ Usage:
 python run_gtrc_inference.py -ct [path to ct image (*.nii or other ITK format)] -pet [path to qspect image] -suv [threshold value to apply to image] -out [output label path ('*.nii or other ITK format)
 
 Includes the pre-trained model for fold #1 of the abstract submitted for SNMMI 2023: "Automated AI Tumor Burden Analysis on Lu-177 PSMA Quantitative SPECT with Global Threshold Regional Consensus Network (GTRC-Net)"
-![Example Accuracy Render](./gtrc/example_mip.png)
+![Example Accuracy Render](./gtrc/example_mip.png = 250x)
