@@ -73,7 +73,7 @@ qs_suv=sitk.GetImageFromArray(suv_ar)
 qs_suv.CopyInformation(qs)
 ct=rs.Execute(ct)
 ct_ar=sitk.GetArrayFromImage(ct)
-threshold_ar=suv_ar>=suv_threshold #get all image volume above global threshold
+threshold_ar=(suv_ar>=1.0) #get all image volume above global threshold
 
 print('Running Tumour Region inference')
 pred_ttb_resampled_ar=ttb_model(np.expand_dims(x,0)).numpy()[0,...,label_channel] #infer ttb label. Convert to numpy and take only label channel
